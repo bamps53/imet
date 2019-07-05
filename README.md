@@ -26,6 +26,7 @@
 
 ## 6th place
 -  (Done)adjust the threshold for each image according to the max probability of that image
+- Mixup and RandomErasing
 
 ## 9th place
 - knowledge Distillation
