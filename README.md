@@ -13,10 +13,10 @@
 - mean / median / std / max / min of each channel
 - brightness / colorness of each image (you can say me that NN can easily detect it — yes, but here i can do it without cropping and resizing — it is less noisy)
 - Max side size and binary flag — height more than width or no (it is a little bit better for tree boosting than just height + width in case of lower side == 300)
-- Aaaaand the secret sauce: ImageNet predictions ;) As I already mentioned — some tags classes similar to ImageNet classes, but ImageNet much bigger, pretrained models much more generalized. So, I add all 1000 (number of ImageNet classes) predictions to this dataset
+- add all 1000 (number of ImageNet classes) predictions to this dataset
 - lightgbm
 - postprocess
-- Different threshold for cultures and tags models
+- (Done)Different threshold for cultures and tags models
 
 ## 2nd place
 - The technique was quite similar to my quickdraw solution. I put top 30 tags and top 20 cultures to the dataset for LGMB
@@ -25,7 +25,7 @@
 - Tag Relevance Prediction
 
 ## 6th place
--  adjust the threshold for each image according to the max probability of that image
+-  (Done)adjust the threshold for each image according to the max probability of that image
 
 ## 9th place
 - knowledge Distillation
@@ -38,12 +38,6 @@
 - two a fully connected layers, one for the culture and one for the tag
 
 
-
-
-
-This is a PyTorch implementation of [iMet Collection 2019](https://www.kaggle.com/c/imet-2019-fgvc6/overview).
-
-This code is based on the [baseline code](https://github.com/lopuhin/kaggle-imet-2019).
 
 ## Usage
 
